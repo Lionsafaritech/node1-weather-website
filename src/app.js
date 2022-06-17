@@ -3,12 +3,13 @@ const express=require("express");
 const hbs=require("hbs")
 const geocode=require("./utils/geocede")
 const forecast=require("./utils/forecast")
-const port=process.env.PORT ||3000
+
 //using path module
 // console.log(__dirname)
 // console.log(__filename)
 //console.log(path.join(__dirname,"../public"))
 const app=express();
+const port=process.env.PORT ||3000
 //Define paths for express configuration
 const publicDirPath=path.join(__dirname,"../public")
 const viewsPath=path.join(__dirname,"../templates/views")
