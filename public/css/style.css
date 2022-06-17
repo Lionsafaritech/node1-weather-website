@@ -53,6 +53,7 @@ button{
     padding: 8px;
 }
 #msg,#msg-two{
+    padding-right: 20px;
     color:green
 }
 #weathercon{
