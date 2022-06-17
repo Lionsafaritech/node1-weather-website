@@ -9,10 +9,12 @@ const forecast=(longitude,latitude,callback)=>{
         }else if(response.body.error){
             callback("Unable to find location",undefined)
         }else{
+            //console.log(response.body.current.humidity)
             callback(undefined,`It is ${response.body.current.weather_descriptions[0]}
               and it is currently ${response.body.current.temperature} ℃ out .
              It feels like ${response.body.current.feelslike} ℃  and wind speed is 
-             ${response.body.current.wind_speed} km/hours`)
+             ${response.body.current.wind_speed} km/hours
+             humidity is ${response.body.current.humidity} %`)
         }
     })
 }
